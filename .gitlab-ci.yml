@@ -1,0 +1,9 @@
+stages:
+  - test
+
+
+e2e:
+  image: postman/newman:5.3.1
+  stage: test
+  script:
+    - newman --version

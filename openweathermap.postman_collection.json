@@ -8,6 +8,21 @@
 	"item": [
 		{
 			"name": "GetWeather",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// @allure.label.story=Get Weather Data\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.be.ok;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
