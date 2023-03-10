@@ -3,7 +3,9 @@ stages:
 
 
 e2e:
-  image: postman/newman:5.3.1
+  image:
+    name: postman/newman:5.3.1
+    entrypoint: [ "" ]
   stage: test
   script:
     - newman --version
