@@ -9,3 +9,4 @@ e2e:
   stage: test
   script:
     - newman --version
+    - newman run openweathermap.postman_collection.json --reporters html
